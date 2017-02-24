@@ -29,6 +29,9 @@ namespace literate_octo_chainsaw.Web.Ui
         {
             // Add framework services.
             services.AddMvc();
+            services.Configure<IISOptions>(options =>
+            {
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
